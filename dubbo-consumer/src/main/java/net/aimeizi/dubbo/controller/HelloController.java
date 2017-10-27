@@ -81,4 +81,10 @@ public class HelloController {
 		model.addAttribute("saveUser", saveUser);
 		return "userAddRes";
 	}
+	
+	@RequestMapping(value = "/testPrint", method = RequestMethod.GET)
+	public String test(ModelMap model){
+		this.demoService.print();
+		return "success";
+	}
 }

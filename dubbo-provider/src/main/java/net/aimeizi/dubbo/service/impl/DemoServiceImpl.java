@@ -12,7 +12,12 @@ public class DemoServiceImpl implements DemoService {
 		if (words == null || words.isEmpty()) {
 			return -1;
 		} else {
-			return words.length();
+			return words.length()+1000;
 		}
+	}
+
+	@Override
+	public void print() {
+		System.out.println("12312321");
 	}
 }
